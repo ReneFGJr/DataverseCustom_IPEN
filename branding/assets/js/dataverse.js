@@ -28,7 +28,7 @@ getvals(url_metrics + 'downloads', 'div4', 'Total');
 function querySubjectDataset(elm) {
   var dvArray = [];
   var fullArray = [];
-  // $.get(metricBaseUrl + "dataverses/bySubject", function (jData) {
+  // $.get(url_metrics + "dataverses/bySubject", function (jData) {
   //     jData.data.forEach(function (item) {
   //         if (item.subject !== "N/A" && item.subject !== "Other") {
   //             dvArray.push([item.subject, item.count]);
@@ -38,7 +38,7 @@ function querySubjectDataset(elm) {
   // });
 
   $.get(
-    metricBaseUrl + "datasets/bySubject?dataLocation=all",
+    url_metrics + "datasets/bySubject?dataLocation=all",
     function (jData) {
       var resultHtml = "";
       jData.data.forEach(function (item) {
