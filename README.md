@@ -9,3 +9,6 @@ git clone https://github.com/ReneFGJr/DataverseCustom_IPEN.git
 
 Torne executável os scripts:
 chmod 700 Scripts/*.sh
+
+Execute o Scripts (Instalador)
+Scripts/envirement.sh
