@@ -1,0 +1,60 @@
+.h_ipen {
+  font-weight: bold;
+  color: #33c;
+}
+
+.ipen_01 {
+  font-size: 1.2em;
+}
+
+.headerCustom {
+  z-index: 10000;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-height: 80px;
+  background-image: url("/dvn/assets/img/background_inep.png.png");
+  background-size: 100% 80px;
+}
+
+.navbar-fixed-top {
+  top: 80px;
+}
+
+.navbar-header {
+  background-color: #f78747;
+  color: #fff;
+}
+
+.navbar,
+.navbar-default,
+.navbar-nav > li > a,
+.navbar-default .navbar-nav>li>a,
+#navbarFixed form.navbar-form-link a.ui-commandlink,
+#navbarFixed ul.navbar-nav li.dropdown span.dropdown-toggle
+{
+  min-height: 20px;
+  background-color: #f78747;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 0.6em;
+  color: #eee;
+  background-image: linear-gradient(to bottom,#f78747 0,#f78747);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar:hover,
+.navbar-default:hover
+  {
+    color: red;
+  }
+.navbar-nav > li > a:hover,
+.navbar-default .navbar-nav>li>a:hover,
+#navbarFixed form.navbar-form-link a.ui-commandlink:hover,
+#navbarFixed ul.navbar-nav li.dropdown span.dropdown-toggle:hover
+  {
+    color: #fff;
+    background-image: linear-gradient(to bottom,#e77737 0,#e77737);
+  }
