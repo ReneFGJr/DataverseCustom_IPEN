@@ -49,6 +49,33 @@
       do repositório.
     </p>
     <p>Se precisar de assistência, entre em contato com a Biblioteca IPEN.</p>
+
+    <!----------- Busca -->
+    <form class="form mt-4">
+      <div class="input-group input-group-lg">
+        <input
+          type="text"
+          class="form-control"
+          id="inputDataverseSearch"
+          onkeydown="if (event.keyCode == 13) document.getElementById('btnDataverseSearch').click();"
+          placeholder="Digite sua pesquisa"
+        />
+        <div class="input-group-btn">
+          <button
+            class="btn btn-default"
+            id="btnDataverseSearch"
+            type="submit"
+            onclick="window.location = '/dataverse/?q=' + document.getElementById('inputDataverseSearch').value;return false;"
+          >
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <!-- BOTAO EXPLORAR-->
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="window.location.href='/dataverse/'">Explorar</button>
+
+    <!------------ ATOM-->
   </div>
   <div id="centers" class="text-center col-md-6">
     <div style="height: 150px"></div>
