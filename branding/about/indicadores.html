@@ -49,10 +49,10 @@
 
       <h2 class="about">Sobre os indicadores</h2>
 
-      <div>Comunidades Dataverse<span id="ID_dataverse">0</span></div>
-      <div>Conjunto de dados<span id="ID_grupos">0</span></div>
-      <div>Arquivos<span id="div3">0</span></div>
-      <div>Downloads<span id="div4">0</span></div>
+      <div>Comunidades Dataverse <span id="ID_dataverse">0</span></div>
+      <div>Conjunto de dados <span id="ID_grupos">0</span></div>
+      <div>Arquivos <span id="div3">0</span></div>
+      <div>Downloads <span id="div4">0</span></div>
 
       <script>
         getvals(url_metrics + "dataverses", "ID_dataverse", "Total");
@@ -61,6 +61,12 @@
         getvals(url_metrics + "downloads", "div4", "Total");
       </script>
     </div>
+
+    <div id="dataversesBySubject" class="col-xs-12"></div>
+    <script>
+      querySubjectDataset("dataversesBySubject");
+    </script>
+
     <!-- /COL -->
   </div>
   <!-- /ROW -->
