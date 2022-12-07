@@ -36,11 +36,11 @@ function querySubjectDataset(elm) {
   //     });
 
   // });
-    alert(url_metrics + "datasets/bySubject?dataLocation=all");
   $.get(
     url_metrics + "datasets/bySubject?dataLocation=all",
     function (jData) {
       var resultHtml = "";
+      alert(item);
       jData.data.forEach(function (item) {
         if (item.subject !== "N/A" && item.subject !== "Other") {
           var dvCount = 0;
