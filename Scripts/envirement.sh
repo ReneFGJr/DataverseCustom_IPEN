@@ -3,7 +3,7 @@ DIR="/var/www/dataverse"
 
 echo $1
 
-echo off
+echo "################ SCRIPT version 1.0.1 ################"
 echo "Create Envirement"
 
 if [ -d "$DIR" ]; then
