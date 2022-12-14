@@ -1,4 +1,11 @@
 echo "ACESSANDO A PASTA DE CONFIGURACOES"
+if [ -d "/usr/local/solr/solr-8.11.1/server/solr/collection1/conf" ]; then
+    echo "Pasta de configuracoes SOLR encontrada"
+else
+    echo "ERRO - Pasta de configuracoes SOLR nao encontrada"
+    break;
+fi
+
 if [ -d "/home/dataverse/dataverse-api" ]; then
     echo "Pasta de configuracoes encontrada"
 else
