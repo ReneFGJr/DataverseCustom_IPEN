@@ -1,15 +1,20 @@
 echo "ACESSANDO A PASTA DE CONFIGURACOES"
-mkdir /home/dataverse/dataverse-api/
+if [ -d "/home/dataverse/dataverse-api" ]; then
+    echo "Pasta de configuracoes encontrada"
+else
+    echo "Criando pasta de configuracoes"
+    mkdir /home/dataverse/dataverse-api/
+fi
 cd /home/dataverse/dataverse-api/
 
 echo "Checando /home/dataverse/dataverse-api/update-fields.sh"
 echo "ENVIANDO METADADOS PARA O SISTEMA"
 rm *.tsv -r
 wget https://lattesdata.cnpq.br/config/index.php/home/dataverse/pa/export/7
-
+mv 7 ipen.tsv
 
 echo "CARREGANDO A ATUALIZACAO DO SCHEMA"
-curl http://localhost:8080/api/admin/datasetfield/load -X POST --data-binary @IPEN.tsv -H "Content-type: text/tab-separated-values"
+curl http://localhost:8080/api/admin/datasetfield/load -X POST --data-binary @ipen.tsv -H "Content-type: text/tab-separated-values"
 
 
 echo "CARREGANDO SCHEMA"
