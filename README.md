@@ -12,3 +12,6 @@ chmod 700 Scripts/*.sh
 
 Execute o Scripts (Instalador)
 Scripts/envirement.sh
+
+Para atualizar as páginas Scripts
+Scripts/custom-pages.sh
