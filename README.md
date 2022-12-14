@@ -15,3 +15,11 @@ Scripts/envirement.sh
 
 Para atualizar as páginas Scripts
 Scripts/update-pages.sh
+
+
+
+
+
+git reset --hard HEAD
+git clean -f -d
+git pullSc
