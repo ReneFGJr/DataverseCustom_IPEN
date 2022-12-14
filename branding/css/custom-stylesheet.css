@@ -13,9 +13,9 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  min-height: 80px;
+  min-height: 100px;
   background-image: url("/dvn/assets/img/background/background_ipen.png");
-  background-size: 100% 80px;
+  background-size: 100% 100px;
 }
 
 .navbar-fixed-top {
