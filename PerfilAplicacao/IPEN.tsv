@@ -1,7 +1,0 @@
-#metadataBlock	name	dataverseAlias	displayName	blockURI	
-	IPEN	ipen	Ipen Metadados		
-#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI	
-	ipen_centro	ipen_centro	Nome do centro		none¨	1	none	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE		ipen	
-#controlledVocabulary	DatasetField	Value	identifier	displayOrder											
-	ipen_centro	CEBIO		0
-	ipen_centro	CECCO		2
