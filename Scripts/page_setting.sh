@@ -4,8 +4,8 @@ echo " "
 echo "Modulo $1"
 echo "Action $2"
 
-if ["$1" = "homepage"]; then
-    if [ "$1" = "delete" ]; then
+if [ "$1" = "homepage" ]; then
+    if [ "$2" = "delete" ]; then
         echo "Removendo Homepage Custimzada"
         curl -X DELETE http://localhost:8080/api/admin/settings/:HomePageCustomizationFile
     else
