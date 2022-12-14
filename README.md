@@ -22,4 +22,4 @@ Scripts/update-pages.sh
 
 git reset --hard HEAD
 git clean -f -d
-git pullSc
+git pull
