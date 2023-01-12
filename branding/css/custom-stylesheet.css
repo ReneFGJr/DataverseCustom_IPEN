@@ -13,14 +13,19 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  min-height: 80px;
-  background-image: url("/dvn/assets/img/background/background_inep.png");
-  background-size: 100% 80px;
+  min-height: 110px;
+  background-image: url("/dvn/assets/img/background/background_ipen.png");
+  background-size: 100% 110px;
 }
 
 .navbar-fixed-top {
-  top: 80px;
+  top: 110px;
 }
+
+#breadCrumbPanel
+  {
+    margin-top: 100px;
+  }
 
 .navbar-header {
   background-color: #f78747;

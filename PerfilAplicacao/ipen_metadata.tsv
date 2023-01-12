@@ -1,0 +1,9 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI	
+	ipen_metadata		Metadados Ipen		
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI	
+	ipen_atividade	Nome da atividade	Informe o nome da atividade	ex: nome da .....	text	1	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE			
+	ipen_centro_vinculo	Nome do centro de vinculo	Nome do centro de vinculo	Nome do centro de vinculo	text	2	#VALUE	FALSE	TRUE	TRUE	FALSE	FALSE	TRUE			
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder											
+	ipen_centro_vinculo	CECCO	CECCO	0
+	ipen_centro_vinculo	CECTM	CECTM	0
+	ipen_centro_vinculo	CEBIO	CEBIO	1
